@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CBP Systems Finder (Mini)</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="dot"></div>
+      <div>
+        <div class="brandTitle">CBP Systems Finder</div>
+        <div class="brandSub">Mini prototype (methods + docs + keyword search)</div>
+      </div>
+    </div>
+
+    <div class="topActions">
+      <input id="q" class="search" type="search" placeholder="Search keywords… (ex: exterior porcelain concrete)" />
+      <button id="resetBtn" class="btn ghost">Reset</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <section class="panel">
+        <div class="panelTitle">Installation Category</div>
+
+        <div class="radioList" id="catList">
+          <!-- injected -->
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panelRow">
+          <div class="panelTitle">Advanced Search</div>
+          <button id="resetSideBtn" class="linkBtn">RESET</button>
+        </div>
+
+        <div class="field">
+          <label for="application">Application</label>
+          <select id="application">
+            <option value="">Any</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="substrate">Substrate</label>
+          <select id="substrate">
+            <option value="">Any</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="tileType">Tile Type</label>
+          <select id="tileType">
+            <option value="">Any</option>
+          </select>
+        </div>
+
+        <div class="hint">
+          Tip: try <b>Stone Tile</b> + <b>Exterior Floors</b> + <b>On-ground Concrete</b>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panelTitle">Industry Methods</div>
+        <div class="hint">
+          This demo treats “Industry Method” as a label (TCNA/etc). Later you can map real codes and attach official PDFs.
+        </div>
+      </section>
+    </aside>
+
+    <section class="content">
+      <div class="contentHead">
+        <h1>Results</h1>
+        <div class="meta">
+          <span id="count">0</span> matching systems
+        </div>
+      </div>
+
+      <div id="results" class="cards"></div>
+
+      <div id="empty" class="empty hidden">
+        <div class="emptyTitle">No matches</div>
+        <div class="emptySub">Try clearing filters or searching different keywords.</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modalBackdrop" class="modalBackdrop hidden" role="dialog" aria-modal="true">
+    <div class="modal">
+      <div class="modalHead">
+        <div>
+          <div id="modalTitle" class="modalTitle">Documents</div>
+          <div id="modalSub" class="modalSub"></div>
+        </div>
+        <button id="closeModal" class="btn ghost">Close</button>
+      </div>
+
+      <div id="modalBody" class="modalBody"></div>
+
+      <div class="modalFoot">
+        <button id="modalDownload" class="btn primary">Download Package</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
