@@ -33,36 +33,60 @@
       </section>
 
       <section class="panel">
-        <div class="panelRow">
-          <div class="panelTitle">Advanced Search</div>
-          <button id="resetSideBtn" class="linkBtn">RESET</button>
-        </div>
+  <div class="panelRow">
+    <div class="panelTitle">Build Your Installation</div>
+    <button id="resetSideBtn" class="linkBtn">RESET</button>
+  </div>
 
-        <div class="field">
-          <label for="application">Application</label>
-          <select id="application">
-            <option value="">Any</option>
-          </select>
-        </div>
+  <div class="field">
+    <label for="mTile">Tile</label>
+    <select id="mTile">
+      <option value="">Any</option>
+    </select>
+  </div>
 
-        <div class="field">
-          <label for="substrate">Substrate</label>
-          <select id="substrate">
-            <option value="">Any</option>
-          </select>
-        </div>
+  <div class="field">
+    <label for="mOver">Over</label>
+    <select id="mOver">
+      <option value="">Any</option>
+    </select>
+  </div>
 
-        <div class="field">
-          <label for="tileType">Tile Type</label>
-          <select id="tileType">
-            <option value="">Any</option>
-          </select>
-        </div>
+  <div class="field">
+    <label for="mOptions">Options</label>
+    <select id="mOptions" multiple size="5"></select>
+    <div class="hint">Hold Ctrl (Windows) / Cmd (Mac) to select multiple.</div>
+  </div>
 
-        <div class="hint">
-          Tip: try <b>Stone Tile</b> + <b>Exterior Floors</b> + <b>On-ground Concrete</b>
-        </div>
-      </section>
+  <hr style="border:0;border-top:1px solid var(--line);margin:14px 0;opacity:.7" />
+
+  <div class="panelTitle">Advanced Search</div>
+
+  <div class="field">
+    <label for="application">Application</label>
+    <select id="application">
+      <option value="">Any</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="substrate">Substrate</label>
+    <select id="substrate">
+      <option value="">Any</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="tileType">Tile Type</label>
+    <select id="tileType">
+      <option value="">Any</option>
+    </select>
+  </div>
+
+  <div class="hint">
+    Tip: pick <b>Porcelain tile</b> + <b>Over on-ground concrete</b> + <b>Optional membrane</b>
+  </div>
+</section>
 
       <section class="panel">
         <div class="panelTitle">Industry Methods</div>
