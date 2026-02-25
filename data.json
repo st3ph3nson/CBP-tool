@@ -1,0 +1,98 @@
+{
+  "categories": [
+    "Ceramic Tile",
+    "Gauged Porcelain Tile",
+    "Stone Tile",
+    "Resilient",
+    "Wood",
+    "Carpet",
+    "Structural Waterproofing",
+    "Resinous/Epoxy Flooring",
+    "Decorative Toppings",
+    "Acrylic Hardcourts",
+    "Structural Strengthening"
+  ],
+  "systems": [
+    {
+      "system_id": "CBP-EXT-FLR-CONC-POR-001",
+      "category": "Ceramic Tile",
+      "tile_type": "Porcelain",
+      "application_type": "Exterior Floors",
+      "substrate": "On-ground Concrete",
+      "industry_method": "F101 (Example)",
+      "cbp_method": "CBP Method T01",
+      "description": "On-ground concrete, bonded installation, optional crack isolation/waterproofing, porcelain tile.",
+      "keywords": ["exterior", "porcelain", "concrete", "slab", "freeze thaw", "movement joints"],
+      "products": {
+        "mortar": ["FlexBond", "MegaLite"],
+        "membrane_optional": ["RedGard", "FractureFree"],
+        "grout": ["Prism", "Polyblend Plus"]
+      },
+      "documents": [
+        { "type": "CAD", "title": "Exterior Tile Over Concrete Detail (DWG)", "url": "#" },
+        { "type": "PDF", "title": "Exterior Tile Installation Guide", "url": "#" },
+        { "type": "SPEC", "title": "CSI 09 30 00 - Tile Spec (Exterior)", "url": "#" }
+      ]
+    },
+    {
+      "system_id": "CBP-EXT-FLR-CONC-STN-001",
+      "category": "Stone Tile",
+      "tile_type": "Natural Stone",
+      "application_type": "Exterior Floors",
+      "substrate": "On-ground Concrete",
+      "industry_method": "F101 STONE",
+      "cbp_method": "CBP Method ST01",
+      "description": "On-ground concrete, bonded mortar bed, optional membrane, natural stone tile.",
+      "keywords": ["exterior", "stone", "concrete", "mortar bed", "optional membrane"],
+      "products": {
+        "mortar_bed": ["Mortar Bed Mix (example)"],
+        "membrane_optional": ["RedGard"],
+        "setting_mortar": ["MegaLite"],
+        "grout": ["Prism"]
+      },
+      "documents": [
+        { "type": "CAD", "title": "Exterior Stone Over Concrete (Bonded Mortar Bed)", "url": "#" },
+        { "type": "PDF", "title": "Stone Exterior Notes & Limitations", "url": "#" }
+      ]
+    },
+    {
+      "system_id": "CBP-EXT-FLR-CONC-STN-002",
+      "category": "Stone Tile",
+      "tile_type": "Natural Stone",
+      "application_type": "Exterior Floors",
+      "substrate": "On-ground Concrete",
+      "industry_method": "F102 STONE",
+      "cbp_method": "CBP Method ST02",
+      "description": "On-ground concrete, optional membrane, natural stone tile.",
+      "keywords": ["exterior", "stone", "concrete", "optional membrane"],
+      "products": {
+        "membrane_optional": ["FractureFree", "RedGard"],
+        "setting_mortar": ["MegaLite", "ProLite"],
+        "grout": ["Prism"]
+      },
+      "documents": [
+        { "type": "CAD", "title": "Exterior Stone Over Concrete (Direct Bond)", "url": "#" },
+        { "type": "SPEC", "title": "CSI 09 30 00 - Stone Tile Spec (Exterior)", "url": "#" }
+      ]
+    },
+    {
+      "system_id": "CBP-INT-FLR-PLY-LFT-001",
+      "category": "Ceramic Tile",
+      "tile_type": "Porcelain (LFT)",
+      "application_type": "Interior Floors",
+      "substrate": "Plywood/OSB",
+      "industry_method": "F144 (Example)",
+      "cbp_method": "CBP Method T12",
+      "description": "Interior floor over plywood/OSB, optional uncoupling/crack isolation, LFT mortar recommended.",
+      "keywords": ["interior", "plywood", "osb", "lft", "uncoupling", "crack isolation"],
+      "products": {
+        "membrane_optional": ["RedGard", "Uncoupling Membrane (example)"],
+        "mortar": ["ProLite", "MegaLite"],
+        "grout": ["Prism"]
+      },
+      "documents": [
+        { "type": "PDF", "title": "Interior LFT Over Wood Subfloor - Guide", "url": "#" }
+      ]
+    }
+  ]
+}
